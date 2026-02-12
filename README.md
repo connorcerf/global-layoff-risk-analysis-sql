@@ -14,7 +14,7 @@ The objective is to move beyond descriptive analytics and develop a structured, 
 
 ## Business Problem
 
-Total layoff counts do not fully capture organizational risk. Workforce risk should be evaluated across three dimensions:
+While total layoff counts offer a broad snapshot, they do not fully capture organizational risk. Workforce risk should be evaluated across three dimensions:
 
 1. **Frequency** – How often layoffs occur  
 2. **Severity** – The average percentage of workforce reduced  
