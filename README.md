@@ -135,7 +135,7 @@ Organizations can use similar tracking mechanisms internally to:
 ## Limitations
 
 - Dataset reflects publicly reported layoffs and may underrepresent smaller private companies
-- Layoff percentage does not capture company profitability or cash position
+- Layoff percentage does not capture company profitability, cash position or company size
 - Geographic results may reflect dataset composition rather than global distribution
 
 ---
