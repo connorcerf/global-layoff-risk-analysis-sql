@@ -6,7 +6,7 @@ This project analyzes global layoff data to evaluate **workforce risk across ind
 
 Rather than focusing solely on total layoffs, this analysis reframes the dataset around a strategic business question:
 
-> **Which industries and funding stages show the highest layoff risk, and what actions can leaders or investors take to reduce the likelihood of catastrophic layoffs (50–100%)?**
+> **Which industries and stages show the highest layoff risk, and what actions can leaders or investors take to reduce the likelihood of catastrophic layoffs (50–100%)?**
 
 The objective is to move beyond descriptive analytics and develop a structured, risk-oriented perspective that supports executive decision-making.
 
