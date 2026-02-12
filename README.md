@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project analyzes global layoff data to evaluate **workforce risk across industries and funding stages**.
+This project analyzes global layoff data to evaluate **workforce risk across industries and company stages**.
 
 Rather than focusing solely on total layoffs, this analysis reframes the dataset around a strategic business question:
 
@@ -14,24 +14,22 @@ The objective is to move beyond descriptive analytics and develop a structured, 
 
 ## Business Problem
 
-Total layoff counts do not fully capture organizational risk.
-
-From a leadership or investor perspective, workforce risk should be evaluated across three dimensions:
+Total layoff counts do not fully capture organizational risk. Workforce risk should be evaluated across three dimensions:
 
 1. **Frequency** – How often layoffs occur  
 2. **Severity** – The average percentage of workforce reduced  
 3. **Catastrophic Events** – Workforce reductions of 50% or greater, including full shutdowns (100%)
 
-This project builds SQL queries to quantify each of these dimensions across industries and funding stages.
+This project builds SQL queries to quantify each of these dimensions across industries and company stages.
 
 ---
 
 ## Tools & Techniques Used
 
-- SQL (MySQL-style syntax)
+- SQL (MySQL syntax)
 - Data cleaning with staging tables
 - Window functions (`ROW_NUMBER`, `DENSE_RANK`)
-- Common Table Expressions (CTEs)
+- Common Table Expressions
 - Conditional aggregation (`CASE WHEN`)
 - Rolling totals for time-based trend analysis
 - Data standardization and NULL handling
@@ -44,7 +42,7 @@ To ensure analytical accuracy, the dataset was cleaned prior to analysis.
 
 Key preparation steps included:
 
-- Creating staging tables to preserve raw data integrity
+- Creating staging tables to preserve the raw data 
 - Removing duplicates using `ROW_NUMBER()`
 - Standardizing inconsistent text values (company, industry, country)
 - Converting date fields to proper `DATE` format
@@ -61,27 +59,28 @@ These steps ensured the final analysis was performed on structured, reliable dat
 Layoff risk was evaluated using aggregated metrics grouped by:
 
 - **Industry**
-- **Company Stage**
+- **Stage**
 
 For each group, the following were calculated:
 
 - Total layoff events  
 - Total employees laid off  
 - Average percentage laid off  
-- Number of high-severity events (≥ 50%)  
+- Number of high-severity events (>= 50%)  
 - Number of full shutdown events (100%)
 
-This multi-dimensional framework provides a clearer view of structural volatility and organizational instability than total headcount alone.
+This approach gives more context than just looking at total layoffs alone.
 
 ---
 
 ## Key Findings
 
-- Layoffs cluster during specific time periods, indicating macroeconomic and cyclical influence.
-- Certain industries exhibit both high event frequency and high average layoff percentages, signaling structural volatility.
-- Company stage does not eliminate risk — both early-stage and later-stage companies experience significant workforce reductions.
-- Full shutdown events (100% layoffs) occur across multiple stages, demonstrating that capital raised does not guarantee operational stability.
-- The United States accounts for the highest total layoff volume in the dataset.
+- Layoffs are not evenly distributed over time. There are clear spike periods, especially around the COVID-19 pandemic and the years that followed, reflecting both the initial economic shock of 2020 and the later workforce corrections after periods of expansion in tech-heavy industries.
+- Some industries stand out not just because layoffs happen more often, but because the percentage cuts tend to be larger. This suggests those industries are more unstable and react more sharply when market conditions change.
+- Company stage does not automatically mean stability. Layoffs occur across early-stage startups as well as later-stage and post-IPO companies, showing that raising significant funding does not guarantee long-term workforce security.
+- There are multiple examples of 100% layoffs across different stages, reinforcing that operational discipline matters more than funding.
+- The majority of total layoffs come from U.S.-based companies, likely reflecting the high concentration of venture-backed and technology firms in the dataset.
+
 
 ---
 
@@ -91,9 +90,9 @@ This multi-dimensional framework provides a clearer view of structural volatilit
 
 Industries with elevated average layoff percentages should:
 
-- Moderate hiring velocity during expansion cycles  
+- Avoid hiring too quickly during strong growth periods  
 - Increase runway requirements  
-- Implement scenario-based workforce planning  
+- Plan for different growth scenarios instead of assuming best-case outcomes 
 
 ---
 
@@ -103,20 +102,20 @@ Layoffs of 50% or greater should be tracked as a distinct risk category.
 
 Organizations and investors should:
 
-- Evaluate burn rate discipline  
-- Stress test hiring assumptions  
+- Avoid overspending  
+- Make sure hiring decisions still make sense if growth slows  
 - Prioritize sustainable scaling over aggressive expansion  
 
 ---
 
-### 3. Do Not Rely on the Company Stage as a Safety Signal
+### 3. Do Not Rely on the Company's Stage as a Safety Signal
 
 Risk is present across all stages.
 
 Decision-makers should focus on:
 
 - Operational efficiency  
-- Hiring discipline  
+- Avoid hiring faster than growth can support  
 - Capital allocation strategy  
 
 ---
@@ -127,9 +126,9 @@ Rolling monthly totals highlight acceleration periods in workforce reductions.
 
 Organizations can use similar tracking mechanisms internally to:
 
-- Pause hiring during contraction periods  
-- Adjust growth projections  
-- Reallocate capital proactively  
+- Hold off on hiring if the industry shows signs of slowing  
+- Update growth plans based on current trends 
+- Shift spending priorities when needed  
 
 ---
 
