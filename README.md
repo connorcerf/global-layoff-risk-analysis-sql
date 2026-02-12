@@ -128,7 +128,15 @@ Organizations can use similar tracking mechanisms internally to:
 
 - Hold off on hiring if the industry shows signs of slowing  
 - Update growth plans based on current trends 
-- Shift spending priorities when needed  
+- Shift spending priorities when needed
+
+---
+
+## Limitations
+
+- Dataset reflects publicly reported layoffs and may underrepresent smaller private companies
+- Layoff percentage does not capture company profitability or cash position
+- Geographic results may reflect dataset composition rather than global distribution
 
 ---
 
