@@ -108,7 +108,7 @@ Organizations and investors should:
 
 ---
 
-### 3. Do Not Rely on the Company's Stage as a Safety Signal
+### 3. Do Not Rely on the Stage as a Safety Signal
 
 Risk is present across all stages.
 
