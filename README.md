@@ -199,3 +199,10 @@ This project reflects both technical SQL capability and business-oriented analyt
 The initial structure of this project was inspired by Alex The Analyst’s SQL World Layoffs tutorial.
 
 The analysis was expanded beyond the guided framework by developing additional risk-based metrics, reframing the analysis around layoff frequency and severity, and incorporating strategic business recommendations which were not included in the original tutorial.
+
+## SQL Files
+
+The full SQL scripts used in this project are available below:
+
+- [Part 1 – Data Cleaning](sql/part1_data_cleaning.sql)
+- [Part 2 – Analysis & Risk Framework](sql/part2_analysis.sql)
