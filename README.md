@@ -52,6 +52,16 @@ Key preparation steps included:
 
 These steps ensured the final analysis was performed on structured, reliable data.
 
+### Data Cleaning Evidence 
+
+#### 1. Creating a Staging Table (Preserving Raw Data)
+
+![Staging Table Creation](images/staging_table_creation_query.png)
+
+#### 2. Identifying Duplicates Using ROW_NUMBER()
+
+![Duplicate Detection Query](images/duplicate_detection_row_number_query.png)
+
 ---
 
 ## Risk Analysis Framework
@@ -69,14 +79,48 @@ For each group, the following were calculated:
 - Number of high-severity events (>= 50%)  
 - Number of full shutdown events (100%)
 
+### Risk by Industry (Frequency + Severity + Catastrophic Events)
+
+The following query aggregates layoff risk metrics by industry, incorporating frequency, severity, and catastrophic workforce reductions.
+
+![Industry Risk Query](images/industry_risk_query.png)
+
+![Industry Risk Results](images/industry_risk_results.png)
+
+### Risk by Stage (Frequency + Severity + Catastrophic Events)
+
+This query applies the same risk framework across funding stages to evaluate whether company maturity reduces layoff risk.
+
+![Stage Risk Query](images/stage_risk_query.png)
+
+![Stage Risk Results](images/stage_risk_results.png)
+
 This approach gives more context than just looking at total layoffs alone.
 
 ---
 
 ## Key Findings
 
-- Layoffs were not evenly distributed over time. Clear spike periods occurred around the COVID-19 pandemic and the years that followed, reflecting the immediate economic shock of 2020 and continued workforce reductions in subsequent years. Many of these total workforce reductions were driven by large publicly traded companies in the Consumer and Retail sectors such as Amazon, Google, and Meta. 
+- Layoffs were not evenly distributed over time. Clear spike periods occurred around the COVID-19 pandemic and the years that followed, reflecting the immediate economic shock of 2020 and continued workforce reductions in subsequent years. Many of these total workforce reductions were driven by large publicly traded companies in the Consumer and Retail sectors such as Amazon, Google, and Meta.
+
+### Layoffs Over Time (Monthly + Rolling Total)
+
+The following query aggregates layoffs by month and calculates a rolling cumulative total to identify acceleration periods.
+
+![Rolling Total Query](images/rolling_total_query.png)
+
+![Rolling Total Results](images/rolling_total_results.png)
+  
 - While layoffs occurred across all industries, Education (36%) and Travel (35%) recorded the highest average percentage workforce reductions, followed by Food, Recruiting, and Real Estate (32%). This indicates that certain industries respond to economic shifts with more severe proportional cuts, suggesting higher workforce volatility in these sectors.
+
+### Industry Frequency vs. Average Severity
+
+To avoid overemphasizing industries with only a few extreme cases, the following query filters for industries with at least 5 layoff events and compares frequency against average percentage reductions.
+
+![Frequency Severity Query](images/frequency_severity_query.png)
+
+![Frequency Severity Results](images/frequency_severity_results.png)
+  
 - While layoffs occurred across all funding stages, post-IPO companies accounted for the largest total workforce reductions. This suggests that company maturity and access to capital do not insulate firms from macroeconomic pressures. Instead, larger public companies may face greater pressure to optimize costs during downturns.
 - There are multiple examples of 100% layoffs across different stages, reinforcing that operational discipline matters more than funding.
 - The majority of total layoffs originated from U.S.-based companies, which aligns with the dataset’s high representation of large, publicly traded firms headquartered in the United States.
