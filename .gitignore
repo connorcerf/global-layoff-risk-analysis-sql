@@ -1,0 +1,48 @@
+# ----------------------------
+# Operating System Files
+# ----------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------
+# SQL / Database Temp Files
+# ----------------------------
+
+*.log
+*.tmp
+*.bak
+*.sqlite
+*.db
+
+# ----------------------------
+# IDE / Editor Folders
+# ----------------------------
+
+.vscode/
+.idea/
+*.swp
+
+# ----------------------------
+# Power BI Temporary / Backup Files
+# ----------------------------
+
+*.pbix.tmp
+*.pbix.backup
+
+# ----------------------------
+# Raw Data Files 
+# ----------------------------
+
+data/raw/
+*.csv
+*.xlsx
+
+# ----------------------------
+# Large Files
+# ----------------------------
+
+*.zip
+*.7z
+*.rar
