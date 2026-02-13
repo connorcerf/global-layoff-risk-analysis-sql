@@ -76,7 +76,7 @@ This approach gives more context than just looking at total layoffs alone.
 ## Key Findings
 
 - Layoffs are not evenly distributed over time. There are clear spike periods, especially around the COVID-19 pandemic and the years that followed, reflecting both the initial economic shock of 2020 and the later workforce corrections after periods of expansion in tech-heavy industries.
-- Some industries stand out not just because layoffs happen more often, but because the percentage cuts tend to be larger. This suggests those industries are more unstable and react more sharply when market conditions change.
+- While layoffs occurred across all industries, Education (36%) and Travel (35%) recorded the highest average percentage workforce reductions, followed by Food, Recruiting, and Real Estate (32%). This indicates that certain industries respond to economic shifts with more severe proportional cuts, suggesting higher workforce volatility in these sectors.
 - While layoffs occurred across all funding stages, post-IPO companies accounted for the largest total workforce reductions. This suggests that company maturity and access to capital do not insulate firms from macroeconomic pressures. Instead, larger public companies may face greater pressure to optimize costs during downturns.
 - There are multiple examples of 100% layoffs across different stages, reinforcing that operational discipline matters more than funding.
 - The majority of total layoffs come from U.S.-based companies, likely reflecting the high concentration of venture-backed and technology firms in the dataset.
