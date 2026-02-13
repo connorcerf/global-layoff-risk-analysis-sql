@@ -205,4 +205,4 @@ The analysis was expanded beyond the guided framework by developing additional r
 The full SQL scripts used in this project are available below:
 
 - [Part 1 – Data Cleaning](sql/part1_data_cleaning.sql)
-- [Part 2 – Analysis & Risk Framework](sql/part2_analysis.sql)
+- [Part 2 – Analysis & Risk Framework](sql/part2_risk_analysis.sql)
