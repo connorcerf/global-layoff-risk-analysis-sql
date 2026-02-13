@@ -87,10 +87,10 @@ This approach gives more context than just looking at total layoffs alone.
 
 ### 1. Monitor High-Risk Industries
 
-Industries with elevated average layoff percentages should:
+Industries with average layoff percentages above the dataset median of 25% should:
 
 - Avoid hiring too quickly during strong growth periods  
-- Increase runway requirements  
+- Maintain longer cash reserves to reduce the likelihood of emergency layoffs during downturns
 - Plan for different growth scenarios instead of assuming best-case outcomes 
 
 ---
@@ -135,7 +135,7 @@ Organizations can use similar tracking mechanisms internally to:
 
 - Dataset reflects publicly reported layoffs and may underrepresent smaller private companies
 - Layoff percentage does not capture company profitability, cash position or company size
-- Geographic results may reflect dataset composition rather than global distribution
+- Geographic trends may reflect the concentration of companies within the dataset rather than true global layoff distribution.
 
 ---
 
