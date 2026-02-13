@@ -75,7 +75,7 @@ This approach gives more context than just looking at total layoffs alone.
 
 ## Key Findings
 
-- Layoffs were not evenly distributed over time. Clear spike periods occurred around the COVID-19 pandemic and the years that followed, reflecting the immediate economic shock of 2020 and continued workforce reductions in subsequent years. Many of these layoffs were driven by large publicly traded companies across Consumer and Retail sectors such as Amazon, Google, and Meta. 
+- Layoffs were not evenly distributed over time. Clear spike periods occurred around the COVID-19 pandemic and the years that followed, reflecting the immediate economic shock of 2020 and continued workforce reductions in subsequent years. Many of these total workforce reductions were driven by large publicly traded companies in the Consumer and Retail sectors such as Amazon, Google, and Meta. 
 - While layoffs occurred across all industries, Education (36%) and Travel (35%) recorded the highest average percentage workforce reductions, followed by Food, Recruiting, and Real Estate (32%). This indicates that certain industries respond to economic shifts with more severe proportional cuts, suggesting higher workforce volatility in these sectors.
 - While layoffs occurred across all funding stages, post-IPO companies accounted for the largest total workforce reductions. This suggests that company maturity and access to capital do not insulate firms from macroeconomic pressures. Instead, larger public companies may face greater pressure to optimize costs during downturns.
 - There are multiple examples of 100% layoffs across different stages, reinforcing that operational discipline matters more than funding.
